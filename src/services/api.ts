@@ -18,7 +18,7 @@ export function useCarousel() {
 }
 
 // post
-export const loginUser = async ({ nik, password }: LoginType) => {
+export const loginUser = async ({ nik, password }: any) => {
   try {
     const response = await fetch(`${process.env.EXPO_PUBLIC_API_URL}/login`, {
       method: "POST",
