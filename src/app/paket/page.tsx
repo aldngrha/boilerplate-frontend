@@ -9,31 +9,49 @@ export default function Paket() {
                         <img src="/assets/images/image 1.png" alt="" width="103" height="75"/>
                         <div className="flex align-middle items-center w-full justify-between">
                             <div className="flex pl-[60px] pr-[50px] gap-4 mx-auto">
-                                <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                    <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] " >
+                                <a href="/about">
+                                    <div className="flex align-middle items-center hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] pr-1 text-justify">
                                         Tentang Kami
-                                    </h4>
-                                </div>
-                                <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                    <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
+                                        </h4>
+                                        <img src="assets/icons/down.png" alt="" className="w-[23px] h-[23px]" />
+                                    </div>
+                                </a>
+                                <a href="/travel">
+                                    <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
                                         Travel
-                                    </h4>
-                                </div>
-                                <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                    <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
-                                        Paket
-                                    </h4>
-                                </div>
-                                <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                    <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
+                                        </h4>
+                                    </div>
+                                </a>
+                                <a href="/rental">
+                                    <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
                                         Rental
-                                    </h4>
-                                </div>
-                                <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                    <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
-                                        Informasi
-                                    </h4>
-                                </div>
+                                        </h4>
+                                    </div>
+                                </a>
+                                <a href="/hotel">
+                                    <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                                        Hotel
+                                        </h4>
+                                    </div>
+                                </a>
+                                <a href="/paket">
+                                    <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                                        Paket
+                                        </h4>
+                                    </div>
+                                </a>
+                                <a href="/artikel">
+                                    <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                                        Artikel
+                                        </h4>
+                                    </div>
+                                </a>
                             </div>
                         <div className="flex gap-5">
                             <button className="border-[1.5px] border-white bg-[#0000ff] text-white py-[18px] px-[45px] rounded-xl text-xl font-medium hover:bg-[#102C79]">
@@ -53,7 +71,7 @@ export default function Paket() {
                         <div className="bg-white p-6 rounded-xl border-[1px] border-solid border-gray-300 group">
                             <div className="">
                                 <div>
-                                    <img src="/assets/images/pakettttt.png" alt="" width="540" height="333" className="rounded-xl hover:"/>
+                                    <img src="/assets/images/pakettt.png" alt="" width="540" height="333" className="rounded-xl hover:"/>
                                 </div>
                             </div>
                             <button className="flex bg-[#73ABFF] py-4 text-black w-[540px] items-center text-xl font-sans justify-center rounded-xl mt-6 hover:bg-[#102C79] hover:text-white">
