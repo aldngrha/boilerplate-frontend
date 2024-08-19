@@ -116,7 +116,9 @@ export default function Paket() {
                             <h3 className="mb-[20px]">
                                 Download Rama Trans App
                             </h3>
-                            <img src="/assets/icons/Google Play.png" alt="" />
+                            <button>
+                                <img src="/assets/icons/Google Play.png" alt="" />
+                            </button>
                         </div>
                         <div>
                             <h4 className="text-gray-700 my-3 font-semibold">Ikuti kami di:</h4>
