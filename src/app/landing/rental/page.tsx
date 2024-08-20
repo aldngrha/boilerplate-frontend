@@ -1,9 +1,20 @@
-import { Navigation } from "lucide-react";
+'use client';
 
-export default function Rental() {
+import { Navigation } from "lucide-react";
+import { useRouter } from "next/navigation";
+
+const RedirectButtons: React.FC = () => {
+    const router = useRouter();
+
+    const goForm = () => {
+        router.push("rental/form");
+    }
+
+
+
     return(
         <section className="bg-gray-100 items-center justify-center">
-            <div className="fixed w-full bg-white items-center align-middle justify-between border-[1px] border-solid border-gray-300 py-[20px] px-[70px]">
+            <div className="fixed w-full bg-white items-center align-middle justify-between border-[1px] border-solid border-gray-300 py-[20px] px-[70px] z-50">
                 <div className="flex align-middle items-center justify-between">
                     <img src="/assets/images/image 1.png" alt="" width="103" height="75"/>
                     <div className="flex align-middle items-center w-full justify-between">
@@ -136,8 +147,8 @@ export default function Rental() {
                 <div className="flex items-center justify-evenly mb-6">
                     <div className="bg-white p-6 rounded-xl border-[1px] border-solid border-gray-300 group">
                         <div className="">
-                            <div>
-                                <img src="/assets/images/hiace kiri.jpg" alt="" width="540" height="333" className="rounded-xl hover:"/>
+                            <div className="overflow-hidden rounded-xl">
+                                <img src="/assets/images/hiace kiri.jpg" alt="" width="540" height="333" onClick={goForm} className="rounded-xl object-cover transition-transform duration-100 ease-in-out hover:brightness-75 hover:scale-110"/>
                             </div>
                             <div>
                                 <div>
@@ -171,15 +182,15 @@ export default function Rental() {
                                 </div>
                             </div>
                         </div>
-                        <button className="flex bg-[#0000ff] py-4 text-white w-[540px] items-center text-xl justify-center rounded-xl mt-6 hover:bg-[#102C79]">
+                        <button onClick={goForm} className="flex bg-[#0000ff] py-4 text-white w-[540px] items-center text-xl justify-center rounded-xl mt-6 hover:bg-[#102C79]">
                             Rental Mobil Sekarang
                         </button>
                     </div>
                     
                     <div className="bg-white p-6 rounded-xl border-t border-gray-300 group">
                         <div className="">
-                            <div>
-                                <img src="/assets/images/hiace kanan.jpg" alt="" width="540" height="333" className="rounded-xl hover:"/>
+                            <div className="overflow-hidden rounded-xl">
+                                <img src="/assets/images/hiace kanan.jpg" alt="" width="540" height="333" className="rounded-xl object-cover transition-transform duration-100 ease-in-out hover:brightness-75 hover:scale-110" onClick={goForm}/>
                             </div>
                             <div>
                                 <div>
@@ -213,7 +224,7 @@ export default function Rental() {
                                 </div>
                             </div>
                         </div>
-                        <button className="flex bg-[#0000ff] py-4 text-white w-[540px] items-center text-xl justify-center rounded-xl mt-6 hover:bg-[#102C79]">
+                        <button className="flex bg-[#0000ff] py-4 text-white w-[540px] items-center text-xl justify-center rounded-xl mt-6 hover:bg-[#102C79]" onClick={goForm}>
                             Rental Mobil Sekarang
                         </button>
                     </div>
@@ -294,7 +305,10 @@ export default function Rental() {
 
         </section>
     )
-
-
-
 }
+
+export default RedirectButtons;
+    
+
+
+
