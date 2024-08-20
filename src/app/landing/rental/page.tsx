@@ -1,7 +1,9 @@
+import { Navigation } from "lucide-react";
+
 export default function Rental() {
     return(
         <section className="bg-gray-100 items-center justify-center">
-            <div className="bg-white items-center align-middle justify-between border-[1px] border-solid border-gray-300 py-[20px] px-[70px]">
+            <div className="fixed w-full bg-white items-center align-middle justify-between border-[1px] border-solid border-gray-300 py-[20px] px-[70px]">
                 <div className="flex align-middle items-center justify-between">
                     <img src="/assets/images/image 1.png" alt="" width="103" height="75"/>
                     <div className="flex align-middle items-center w-full justify-between">
@@ -28,15 +30,15 @@ export default function Rental() {
                         </div>
                         <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
                             <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
-                                Informasi
+                                Artikel
                             </h4>
                         </div>
                     </div>
                     <div className="flex gap-5">
-                        <button className="border-[1.5px] border-white bg-[#0000ff] text-white py-[18px] px-[45px] rounded-xl text-xl font-medium hover:bg-[#102C79]">
+                        <button className="border-[1.5px] border-white bg-[#0000ff] text-white py-[16px] px-[45px] rounded-xl text-xl font-medium hover:bg-[#102C79]">
                             Daftar
                         </button>
-                        <button className="border-[1.5px] border-[#0000ff] bg-white text-[#0000ff] py-[18px] px-[45px] rounded-xl text-xl font-medium hover:bg-[#102C79] hover:border-white hover:text-white">
+                        <button className="border-[1.5px] border-[#0000ff] bg-white text-[#0000ff] py-[16px] px-[45px] rounded-xl text-xl font-medium hover:bg-[#102C79] hover:border-white hover:text-white">
                             Login
                         </button>
                     </div>
@@ -45,8 +47,8 @@ export default function Rental() {
                 <hr className="border-white"/>
             </div>
 
-            <div className="items-center justify-center mt-12">
-                <div className="justify-center flex align-middle m-12 items-center">
+            <div className="items-center justify-center pt-40">
+                <div className="justify-center flex align-middle items-center">
                     <div>
                         <div>
                             <div className="flex items-center justify-center">
@@ -219,7 +221,7 @@ export default function Rental() {
             </div>
             
             <div>
-                <div className="flex px-[70px] pt-[20px] pb-[40px] justify-between">
+                <div className="flex px-[70px] pt-[20px] pb-[40px] justify-between bg-white">
                     <div>
                         <div className="flex gap-[35px] items-start">
                             <img src="/assets/images/image 1.png" alt="" width="103" height="75"/>
@@ -228,20 +230,20 @@ export default function Rental() {
                         
                     </div>
                     <div className="w-[180px]">
-                        <h3 className="mb-[20px]">
+                        <h3 className="mb-[20px] font-semibold text-xl">
                             Tentang Kami
                         </h3>
-                        <div className="gap-[20px]">
+                        <div className="flex flex-col gap-[15px]">
                             <h6>Sejarah</h6>
                             <h6>Visi dan Misi</h6>
                             <h6></h6>
                         </div>
                     </div>
                     <div className="w-[131px]">
-                        <h3 className="mb-[20px]">
+                        <h3 className="mb-[20px] font-semibold text-xl">
                             Product
                         </h3>
-                        <div className="gap-[20px]">
+                        <div className="flex flex-col gap-[15px]">
                             <h6>Travel</h6>
                             <h6>Paket</h6>
                             <h6>Rental</h6>
@@ -249,16 +251,16 @@ export default function Rental() {
                         </div>
                     </div>
                     <div className="w-[180px]">
-                        <h3 className="mb-[20px]">
+                        <h3 className="mb-[20px] font-semibold text-xl">
                             Informasi
                         </h3>
-                        <div>
+                        <div className="flex flex-col gap-[15px]">
                             <h6>Blog</h6>
                             <h6>FAQ</h6>
                             <h6>Terms and Conditions</h6>
                         </div>
                     </div>
-                    <div className="flex-col gap-[30px]">
+                    <div className="flex flex-col gap-[30px]">
                         <div >
                             <h3 className="mb-[20px]">
                                 Download Rama Trans App
@@ -269,7 +271,7 @@ export default function Rental() {
                             <h4 className="text-gray-700">Ikuti kami di</h4>
                             <div className="gap-5 justify-center flex">
                                 <button className="size-12 bg-gray-200 rounded-full">
-                                    <img src="assets/icons/YouTube.svg" alt="" className="size-auto"/>
+                                    <img src="assets/icons/YouTube.svg" alt="" className="size-auto fill-gray-700"/>
                                 </button>
                                 <button className="size-12 bg-gray-200 rounded-full">
                                     <img src="assets/icons/IG.svg" alt="" />
