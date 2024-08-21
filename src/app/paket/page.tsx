@@ -65,6 +65,7 @@ export default function Paket() {
                         <hr className="border-white"/>
                     </div>
                 </div>
+            </div>
   
                 <div className="bg-gray-100 items-center justify-center border-[1px] border-solid border-gray-300">
                     <div className="flex items-center m-10 justify-evenly">
@@ -87,7 +88,6 @@ export default function Paket() {
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div>
                 <div className="flex bg-white px-[70px] pt-[20px] pb-[40px] justify-between">
