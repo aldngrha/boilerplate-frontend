@@ -3,70 +3,67 @@ import { Container } from "postcss"
 export default function Travel() {
     return (
         <section className="bg-gray-100 items-center justify-center">
-            <div className="bg-white items-center align-middle justify-between border-[1px] border-solid border-gray-300">
-                <div>
-                    <div className="flex items-center justify-between py-[20px] px-[70px]">
-                        <img src="/assets/images/image 1.png" alt="" width="103" height="75"/>
-                        <div className="flex align-middle items-center w-full justify-between">
-                            <div className=" flex pl-[50px] pr-[50px] gap-4 mx-auto">
-                                <a href="/about">
-                                    <div className="flex align-middle items-center hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] pr-1 text-justify">
-                                        Tentang Kami
-                                        </h4>
-                                    </div>
-                                </a>
-                                <a href="/travel">
-                                    <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
-                                        Travel
-                                        </h4>
-                                    </div>
-                                </a>
-                                <a href="/rental">
-                                    <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
-                                        Rental
-                                        </h4>
-                                    </div>
-                                </a>
-                                <a href="/hotel">
-                                    <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
-                                        Hotel
-                                        </h4>
-                                    </div>
-                                </a>
-                                <a href="/paket">
-                                    <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
-                                        Paket
-                                        </h4>
-                                    </div>
-                                </a>
-                                <a href="/artikel">
-                                    <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                        <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
-                                        Artikel
-                                        </h4>
-                                    </div>
-                                </a>
+            <div className="fixed w-full bg-white items-center align-middle justify-between border-[1px] border-solid border-gray-300 py-[20px] px-[70px] z-50">
+                <div className="flex align-middle items-center justify-between">
+                    <img src="/assets/images/image 1.png" alt="" width="103" height="75"/>
+                    <div className="flex align-middle items-center w-full justify-between">
+                    <div className="flex pl-[60px] pr-[50px] gap-4 mx-auto">
+                        <a href="/about">
+                            <div className="flex align-middle items-center hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                <h4 className="text-xl text-gray-700 font-medium p-[10px] pr-1 text-justify">
+                                Tentang Kami
+                                </h4>
                             </div>
-                        <div className="flex gap-5">
-                            <button className="border-[1.5px] border-white bg-[#0000ff] text-white py-[18px] px-[45px] rounded-xl text-xl font-medium hover:bg-[#102C79]">
-                                Daftar
-                            </button>
-                            <button className="border-[1.5px] border-[#0000ff] bg-white text-[#0000ff] py-[18px] px-[45px] rounded-xl text-xl font-medium hover:bg-[#102C79] hover:border-white hover:text-white">
-                                Login
-                            </button>
-                        </div>
-                        </div>
-                        <hr className="border-white"/>
+                        </a>
+                        <a href="/travel">
+                            <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                                Travel
+                                </h4>
+                            </div>
+                        </a>
+                        <a href="/rental">
+                            <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                                Rental
+                                </h4>
+                            </div>
+                        </a>
+                        <a href="/hotel">
+                            <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                                Hotel
+                                </h4>
+                            </div>
+                        </a>
+                        <a href="/paket">
+                            <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                                Paket
+                                </h4>
+                            </div>
+                        </a>
+                        <a href="/artikel">
+                            <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                                <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                                Artikel
+                                </h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="flex gap-5">
+                        <button className="border-[1.5px] border-white bg-[#0000ff] text-white py-[16px] px-[45px] rounded-xl text-xl font-medium hover:bg-[#102C79]">
+                            Daftar
+                        </button>
+                        <button className="border-[1.5px] border-[#0000ff] bg-white text-[#0000ff] py-[16px] px-[45px] rounded-xl text-xl font-medium hover:bg-[#102C79] hover:border-white hover:text-white">
+                            Login
+                        </button>
+                    </div>
                     </div>
                 </div>
             </div>
   
-            <div className="bg-[#73ABFF] bg-opacity-20">
+            <div className="bg-[#73ABFF] bg-opacity-20 pt-28">
                 <div className="flex justify-center items-center pt-10">
                     <h2 className="font-bold text-[35px]">
                         Banyak Keunggulan yang didapatkan pesan tiket di Rama Tranz
