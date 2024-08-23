@@ -1,6 +1,6 @@
 import { Container } from "postcss"
 
-export default function Paket() {
+export default function Travel() {
     return (
         <section className="bg-gray-100 items-center justify-center">
             <div className="bg-white items-center align-middle justify-between border-[1px] border-solid border-gray-300">
@@ -66,27 +66,150 @@ export default function Paket() {
                 </div>
             </div>
   
-                <div className="bg-gray-100 items-center justify-center border-[1px] border-solid border-gray-300">
-                    <div className="flex items-center m-10 justify-evenly">
-                        <div className="bg-white p-6 rounded-xl border-[1px] border-solid border-gray-300 group">
-                            <div className="">
+            <div className="bg-[#73ABFF] bg-opacity-20">
+                <div className="flex justify-center items-center pt-10">
+                    <h2 className="font-bold text-[35px]">
+                        Banyak Keunggulan yang didapatkan pesan tiket di Rama Tranz
+                    </h2>
+                </div>
+
+                    <div className="flex justify-center items-center gap-10 py-10">
+
+                        <div className="">
+                            <div className="flex gap-4 mx-4 mb-4">
+                                <img src="assets/images/tickets 1.png" alt="" />
                                 <div>
-                                    <img src="/assets/images/pakettt.png" alt="" width="540" height="333" className="rounded-xl"/>
+                                    <h3 className="font-bold">Pasti dapat kursi</h3>
+                                    <p>Bisa langsung berangkat dengan nyaman, bebas khawatir.</p>
                                 </div>
+
                             </div>
-                            <button className="flex bg-[#73ABFF] py-4 text-black w-[540px] items-center text-xl font-sans justify-center rounded-xl mt-6 hover:bg-[#102C79] hover:text-white">
-                                <div className="justify-center items-center text-center">
-                                Silahkan hubungi admin kami 
-                                <br />
-                                <div className="flex align middle items-center justify-center text-lg gap-2">
-                                <img src="/assets/icons/WhatsApp.png" alt="" />
-                                +6285736471993
+                            <div className="flex gap-4 mx-4 mb-4">
+                                <img src="assets/images/best-price.png" alt="" />
+                                <div>
+                                    <h3 className="font-bold">Harga kompetitif</h3>
+                                    <p>Bisa langsung berangkat dengan nyaman, bebas khawatir.</p>
                                 </div>
-                                </div>   
-                            </button>
+
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="flex gap-4 mx-4 mb-4">
+                                <img src="assets/images/trophy.png" alt="" />
+                                <div>
+                                    <h3 className="font-bold">Layanan kelas satu</h3>
+                                    <p>Bisa langsung berangkat dengan nyaman, bebas khawatir.</p>
+                                </div>
+
+                            </div>
+                            <div className="flex gap-4 mx-4 mb-4">
+                                <img src="assets/images/driver.png" alt="" />
+                                <div>
+                                    <h3 className="font-bold"> Layanan antar jemput</h3>
+                                    <p>Bisa langsung berangkat dengan nyaman, bebas khawatir.</p>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
+
+            </div>
+
+            <div className="flex justify-center m-10">
+                <div className="flex justify-center">
+                    <div className="flex mx-5 gap-10">
+                        <div className="flex gap-4 rounded-lg p-2 border-gray-200 border-[2px] bg-white">
+                            <img src="assets/images/completed-task 1.png" alt="" />
+                            <div>
+                            <h2 className="font-bold">
+                                Cara memesan tiket
+                            </h2>
+                            <p className="w-[500px]">
+                            Mari, cari tau mudahnya memesan tiket Travel di Rama Tranz dengan cepat dan nyaman.
+                            </p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4 rounded-lg p-2 border-gray-200 border-[1px] bg-white">
+                            <img src="assets/images/compliant 1.png" alt="" />
+                            <div>
+                            <h2 className="font-bold">
+                                Persyaratan Perjalanan
+                            </h2>
+                            <p className="w-[500px]">
+                            Mari, cari tau mudahnya memesan tiket Travel di Rama Tranz dengan cepat dan nyaman.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
                 </div>
+            </div>
+
+            <div className="px-20">
+                <h2 className="font-bold mb-4">
+                    Keunggulan pesan tiket Online di Rama Tranz
+                </h2>
+                <h3 className="font-bold mb-1">
+                    1. Pesan dari Mana Saja
+                </h3>
+                <p className="mb-7">
+                    Anda dapat membeli tiket dari mana saja dan kapan saja, tanpa harus mengunjungi loket atau agen perjalanan. Ini memberi Anda fleksibilitas untuk merencanakan perjalanan dengan mudah dari rumah, kantor, atau, bahkan saat bepergian.
+                </p>
+                <h3 className="font-bold mb-1">
+                    2. Pilihan Rute dan Mobil Lengkap
+                </h3>
+                <p className="mb-7">
+                    Anda dapat membeli tiket dari mana saja dan kapan saja, tanpa harus mengunjungi loket atau agen perjalanan. Ini memberi Anda fleksibilitas untuk merencanakan perjalanan dengan mudah dari rumah, kantor, atau, bahkan saat bepergian.
+                </p>
+                <h3 className="font-bold mb-1">
+                    3. Harga Murah
+                </h3>
+                <p className="mb-7">
+                    Anda dapat membeli tiket dari mana saja dan kapan saja, tanpa harus mengunjungi loket atau agen perjalanan. Ini memberi Anda fleksibilitas untuk merencanakan perjalanan dengan mudah dari rumah, kantor, atau, bahkan saat bepergian.
+                </p>
+                <h3 className="font-bold mb-1">
+                    4. Layanan Customer Service 24 Jam
+                </h3>
+                <p className="mb-14">
+                    Anda dapat membeli tiket dari mana saja dan kapan saja, tanpa harus mengunjungi loket atau agen perjalanan. Ini memberi Anda fleksibilitas untuk merencanakan perjalanan dengan mudah dari rumah, kantor, atau, bahkan saat bepergian.
+                </p>
+
+                <h2 className="font-bold mb-4">
+                    Kenali Lebih Jauh Kelas Travel di Rama Tranz
+                </h2>
+                <h3 className="font-bold mb-1">
+                    1. Toyota Hiace Premio
+                </h3>
+                <p className="mb-7">
+                    Kelas ini menawarkan mobil Toyota Hiace Premio yang dirancang untuk memberikan kenyamanan maksimal. Dengan ruang yang luas, kursi yang nyaman, dan fasilitas premium, Toyota Hiace Premio ideal untuk perjalanan panjang atau grup besar yang mengutamakan kemewahan dan kualitas.
+                </p>
+                <h3 className="font-bold mb-1">
+                    2. Toyota Hiace Commuter
+                </h3>
+                <p className="mb-14">
+                    Untuk pilihan yang lebih ekonomis namun tetap nyaman, Toyota Hiace Commuter adalah opsi yang tepat. Kelas ini menyediakan ruang yang cukup untuk penumpang dengan fitur yang memadai, membuatnya cocok untuk perjalanan sehari-hari atau perjalanan jarak menengah dengan efisiensi biaya.
+                </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
 
             <div>
                 <div className="flex bg-white px-[70px] pt-[20px] pb-[40px] justify-between">
