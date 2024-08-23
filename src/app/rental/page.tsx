@@ -377,6 +377,7 @@ const RedirectButtons: React.FC = () => {
                                 Download Rama Trans App
                             </h3>
                             <img src="/assets/icons/Google Play.png" alt="" />
+
                         </div>
                         <div>
                             <h4 className="text-gray-700">Ikuti kami di</h4>
