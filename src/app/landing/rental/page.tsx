@@ -2,6 +2,88 @@
 
 import { Navigation } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useRef } from "react";
+
+
+
+const ImageGalleryA: React.FC = () => {
+    const galleryRef = useRef<HTMLDivElement>(null);
+  
+    const scrollGallery = (direction: 'left' | 'right') => {
+      if (galleryRef.current) {
+        const scrollAmount = direction === 'left' ? -540 : 540;
+        galleryRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    };
+  
+    return (
+        <div className="relative w-full">
+            {/* Left Button */}
+            <button
+            onClick={() => scrollGallery('left')}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-white text-gray-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+            &#8592;
+            </button>
+    
+            {/* Image Gallery Container */}
+            <div ref={galleryRef} className="flex overflow-x-scroll scroll-smooth group w-[540px] h-[333px]">
+                <img src="/assets/images/hiace kiri.jpg" alt="" width="540" height="333" className="object-cover transition-transform duration-100 ease-in-out hover:brightness-75 hover:scale-110"/>
+                <img src="/assets/images/Premio2.jpg" alt="" width="540" height="333" className="object-cover transition-transform duration-100 ease-in-out hover:brightness-75 hover:scale-110"/>
+                <img src="/assets/images/Premio3.jpg" alt="" width="540" height="333" className="object-cover transition-transform duration-100 ease-in-out hover:brightness-75 hover:scale-110"/>
+                {/* Add more images as needed */}
+            </div>
+    
+            {/* Right Button */}
+            <button
+            onClick={() => scrollGallery('right')}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-white text-gray-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+            &#8594;
+            </button>
+        </div>
+    );
+};
+
+const ImageGalleryB: React.FC = () => {
+    const galleryRef = useRef<HTMLDivElement>(null);
+  
+    const scrollGallery = (direction: 'left' | 'right') => {
+      if (galleryRef.current) {
+        const scrollAmount = direction === 'left' ? -540 : 540;
+        galleryRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    };
+  
+    return (
+        <div className="relative w-full">
+            {/* Left Button */}
+            <button
+            onClick={() => scrollGallery('left')}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-800 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+            &#8592;
+            </button>
+    
+            {/* Image Gallery Container */}
+            <div ref={galleryRef} className="flex overflow-x-scroll scroll-smooth group w-[540px] h-[333px]">
+                <img src="/assets/images/hiace kanan.jpg" alt="" width="540" height="333" className="object-cover transition-transform duration-100 ease-in-out hover:brightness-75 hover:scale-110"/>
+                <img src="/assets/images/Commuter2.jpg" alt="" width="540" height="333" className="object-cover transition-transform duration-100 ease-in-out hover:brightness-75 hover:scale-110"/>
+                <img src="/assets/images/Commuter3.jpg" alt="" width="540" height="333" className="object-cover transition-transform duration-100 ease-in-out hover:brightness-75 hover:scale-110"/>
+                {/* Add more images as needed */}
+            </div>
+    
+            {/* Right Button */}
+            <button
+            onClick={() => scrollGallery('right')}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-800 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+            &#8594;
+            </button>
+        </div>
+    );
+};
+
 
 const RedirectButtons: React.FC = () => {
     const router = useRouter();
@@ -31,12 +113,17 @@ const RedirectButtons: React.FC = () => {
                         </div>
                         <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
                             <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
+                                Rental
+                            </h4>
+                        </div>
+                        <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                            <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
                                 Paket
                             </h4>
                         </div>
                         <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
                             <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
-                                Rental
+                                Hotel
                             </h4>
                         </div>
                         <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
@@ -148,7 +235,9 @@ const RedirectButtons: React.FC = () => {
                     <div className="bg-white p-6 rounded-xl border-[1px] border-solid border-gray-300 group">
                         <div className="">
                             <div className="overflow-hidden rounded-xl">
-                                <img src="/assets/images/hiace kiri.jpg" alt="" width="540" height="333" onClick={goForm} className="rounded-xl object-cover transition-transform duration-100 ease-in-out hover:brightness-75 hover:scale-110"/>
+                                <ImageGalleryA>
+
+                                </ImageGalleryA>
                             </div>
                             <div>
                                 <div>
@@ -190,7 +279,7 @@ const RedirectButtons: React.FC = () => {
                     <div className="bg-white p-6 rounded-xl border-t border-gray-300 group">
                         <div className="">
                             <div className="overflow-hidden rounded-xl">
-                                <img src="/assets/images/hiace kanan.jpg" alt="" width="540" height="333" className="rounded-xl object-cover transition-transform duration-100 ease-in-out hover:brightness-75 hover:scale-110" onClick={goForm}/>
+                                <ImageGalleryB></ImageGalleryB>
                             </div>
                             <div>
                                 <div>
