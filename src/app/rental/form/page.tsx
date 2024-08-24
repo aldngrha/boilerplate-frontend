@@ -11,28 +11,61 @@ const CheckboxButtonControl: React.FC = () => {
     };
   
     return (
-      <div className="p-8">
-        {/* Checkbox */}
-        <label className="flex items-center space-x-2 mb-4">
-          <input
-            type="checkbox"
-            checked={isChecked}
-            onChange={handleCheckboxChange}
-            className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
-          />
-          <span className="text-gray-700">I agree to the terms and conditions</span>
-        </label>
+      <div>
+        <div className='flex flex-col gap-[20px]'>
+
+        
+            {/* Checkbox */}
+            <div>
+            //icon
+            <label className="flex items-center space-x-2">
+                <input
+                    type="checkbox"
+                    checked={isChecked}
+                    onChange={handleCheckboxChange}
+                    className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                />
+                <span className="text-gray-700">I agree to the terms and conditions</span>
+                </label>
+            </div>
+            
+            <div>
+                <div className="bg-red-100 p-[20px] rounded-[6px]">
+                    <h5 className="text-red-500 font-semibold">
+                        Catatan:
+                    </h5>
+                    <h6 className="text-red-500 font-normal">
+                        Penyewa bertanggung jawab atas biaya makan dan akomodasi untuk pengemudi.
+                    </h6>
+                </div>
+            </div>
+
+            <div className="flex justify-between text-xl">
+                <div>
+                    Total Harga
+                </div>
+                <h2 className="text-[#0000ff] text-2xl font-semibold">
+                    150
+                </h2>
+            </div>
+        </div>
+
+
+        <hr></hr>
   
         {/* Button */}
+        <div className='flex justify-between'>
         <button
           onClick={() => alert('Button clicked!')}
           disabled={!isChecked}
-          className={`px-4 py-2 rounded-lg text-white ${
-            isChecked ? 'bg-blue-500 hover:bg-blue-700' : 'bg-gray-400 cursor-not-allowed'
+          className={` text-white rounded-[8px] py-[20px] text-xl font-semibold w-full mt-[20px] ${
+            isChecked ? 'bg-[#0000ff] hover:bg-blue-700' : 'bg-gray-400 cursor-not-allowed'
           }`}
         >
-          Continue
+            
+          Lanjut Pembayaran
         </button>
+        </div>
       </div>
     );
   };
@@ -354,40 +387,9 @@ export default function Form(){
                         </div>
                         
                         <div className="px-[30px]">
-                            <div className="flex flex-col gap-[10px]">
-                                <div className="flex flex-col gap-[30px]">
-                                    <div>
-                                        <div className="flex">
-                                            //icon
-                                            <CheckboxButtonControl></CheckboxButtonControl>
-                                        </div>
-                                        <div>
-                                            <div className="bg-red-100 p-[20px] rounded-[6px]">
-                                                <h5 className="text-red-500 font-semibold">
-                                                    Catatan:
-                                                </h5>
-                                                <h6 className="text-red-500 font-normal">
-                                                    Penyewa bertanggung jawab atas biaya makan dan akomodasi untuk pengemudi.
-                                                </h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="flex justify-between text-xl">
-                                        <div>
-                                            Total Harga
-                                        </div>
-                                        <h2 className="text-[#0000ff] text-2xl font-semibold">
-                                            150
-                                        </h2>
-                                    </div>
-                                </div>
-                                <hr />
-                            </div>
+                            <CheckboxButtonControl></CheckboxButtonControl>
                         </div>
                     </div>
-                    <button className="bg-[#0000ff] text-white mx-[30px] rounded-[8px] py-[20px] text-xl font-semibold">
-                        Lanjut Pembayaran
-                    </button>
                 </div>
             </div>
 
