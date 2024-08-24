@@ -23,7 +23,7 @@ const ImageGalleryA: React.FC = () => {
             onClick={() => scrollGallery('left')}
             className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-white text-gray-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
-            &#8592;
+            &#9664;
             </button>
     
             {/* Image Gallery Container */}
@@ -39,7 +39,7 @@ const ImageGalleryA: React.FC = () => {
             onClick={() => scrollGallery('right')}
             className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-white text-gray-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
-            &#8594;
+            &#9654;
             </button>
         </div>
     );
@@ -60,9 +60,9 @@ const ImageGalleryB: React.FC = () => {
             {/* Left Button */}
             <button
             onClick={() => scrollGallery('left')}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-800 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-white text-gray-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
-            &#8592;
+            &#9664;
             </button>
     
             {/* Image Gallery Container */}
@@ -76,9 +76,9 @@ const ImageGalleryB: React.FC = () => {
             {/* Right Button */}
             <button
             onClick={() => scrollGallery('right')}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-800 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-white text-gray-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
-            &#8594;
+            &#9654;
             </button>
         </div>
     );
@@ -92,8 +92,6 @@ const RedirectButtons: React.FC = () => {
         router.push("rental/form");
     }
 
-
-
     return(
         <section className="bg-gray-100 items-center justify-center">
             <div className="fixed w-full bg-white items-center align-middle justify-between border-[1px] border-solid border-gray-300 py-[20px] px-[70px] z-50">
@@ -101,48 +99,36 @@ const RedirectButtons: React.FC = () => {
                     <img src="/assets/images/image 1.png" alt="" width="103" height="75"/>
                     <div className="flex align-middle items-center w-full justify-between">
                     <div className="flex pl-[60px] pr-[50px] gap-4 mx-auto">
-                        <a href="/about">
-                            <div className="flex align-middle items-center hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                <h4 className="text-xl text-gray-700 font-medium p-[10px] pr-1 text-justify">
+                        <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                            <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] " >
                                 Tentang Kami
-                                </h4>
-                            </div>
-                        </a>
-                        <a href="/travel">
-                            <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                            </h4>
+                        </div>
+                        <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                            <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
                                 Travel
-                                </h4>
-                            </div>
-                        </a>
-                        <a href="/rental">
-                            <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                            </h4>
+                        </div>
+                        <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                            <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
                                 Rental
-                                </h4>
-                            </div>
-                        </a>
-                        <a href="/hotel">
-                            <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
-                                Hotel
-                                </h4>
-                            </div>
-                        </a>
-                        <a href="/paket">
-                            <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                            </h4>
+                        </div>
+                        <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                            <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
                                 Paket
-                                </h4>
-                            </div>
-                        </a>
-                        <a href="/artikel">
-                            <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
-                                <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px]">
+                            </h4>
+                        </div>
+                        <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                            <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
+                                Hotel
+                            </h4>
+                        </div>
+                        <div className="hover:bg-gray-700 hover:bg-opacity-30 rounded-xl">
+                            <h4 className="text-xl text-gray-700 font-medium p-[10px] gap-[2px] hover:">
                                 Artikel
-                                </h4>
-                            </div>
-                        </a>
+                            </h4>
+                        </div>
                     </div>
                     <div className="flex gap-5">
                         <button className="border-[1.5px] border-white bg-[#0000ff] text-white py-[16px] px-[45px] rounded-xl text-xl font-medium hover:bg-[#102C79]">
@@ -154,6 +140,7 @@ const RedirectButtons: React.FC = () => {
                     </div>
                     </div>
                 </div>
+                <hr className="border-white"/>
             </div>
 
             <div className="items-center justify-center pt-40">
@@ -376,23 +363,22 @@ const RedirectButtons: React.FC = () => {
                             <h3 className="mb-[20px]">
                                 Download Rama Trans App
                             </h3>
-                            <img src="/assets/icons/Google Play.png" alt="" />
-
+                            <img src="/assets/icons/GoogleDL.svg" alt="" />
                         </div>
                         <div>
                             <h4 className="text-gray-700">Ikuti kami di</h4>
                             <div className="gap-5 justify-center flex">
-                            <button className="size-12 bg-gray-200 rounded-full">
-                                    <img src="assets/icons/YouTube.png" alt="" className="size-auto"/>
+                                <button className="size-12 bg-gray-200 rounded-full">
+                                    <img src="assets/icons/YouTube.svg" alt="" className="size-auto fill-gray-700"/>
                                 </button>
                                 <button className="size-12 bg-gray-200 rounded-full">
-                                    <img src="assets/icons/Instagram.png" alt="" />
+                                    <img src="assets/icons/IG.svg" alt="" />
                                 </button>
                                 <button className="size-12 bg-gray-200 rounded-full">
-                                    <img src="assets/icons/Facebook.png" alt="" />
+                                    <img src="assets/icons/fb.svg" alt="" />
                                 </button>
                                 <button className="size-12 bg-gray-200 rounded-full">
-                                    <img src="assets/icons/Twitter.png" alt="" />
+                                    <img src="assets/icons/twt.svg" alt="" />
                                 </button>
                             </div>
                         </div>
