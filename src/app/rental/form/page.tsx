@@ -1,7 +1,8 @@
 'use client';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
-const CheckboxButtonControl: React.FC = () => {
+const CheckboxButtonControl: React.FC<{ onProceed: () => void }> = ({ onProceed }) => {
     // State to track if the checkbox is checked
     const [isChecked, setIsChecked] = useState(false);
   
@@ -56,7 +57,7 @@ const CheckboxButtonControl: React.FC = () => {
         {/* Button */}
         <div className='flex justify-between'>
         <button
-          onClick={() => alert('Button clicked!')}
+          onClick={isChecked ? onProceed : undefined }
           disabled={!isChecked}
           className={` text-white rounded-[8px] py-[20px] text-xl font-semibold w-full mt-[20px] ${
             isChecked ? 'bg-[#0000ff] hover:bg-blue-700' : 'bg-gray-400 cursor-not-allowed'
@@ -69,6 +70,22 @@ const CheckboxButtonControl: React.FC = () => {
       </div>
     );
   };
+
+const RedirectButtons: React.FC = () => {
+    const router = useRouter ();
+
+    const goPurchase = () => {
+        router.push('form/bayar');
+    }
+
+    return (
+        <div className="p-8">
+          {/* Render the CheckboxButtonControl and pass the goPurchase function as a prop */}
+          <CheckboxButtonControl onProceed={goPurchase} />
+        </div>
+      );
+}
+
 
 export default function Form(){
     return(
@@ -387,7 +404,7 @@ export default function Form(){
                         </div>
                         
                         <div className="px-[30px]">
-                            <CheckboxButtonControl></CheckboxButtonControl>
+                            <RedirectButtons></RedirectButtons>
                         </div>
                     </div>
                 </div>
